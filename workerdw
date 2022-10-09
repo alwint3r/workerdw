@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Assumes that we are running on macOS
+# and have LLVM libc++ directory at /usr/local/opt/llvm/lib/c++
+
+export DYLD_LIBRARY_PATH=/usr/local/opt/llvm/lib/c++:$DYLD_LIBRARY_PATH
+
+workderd $@
